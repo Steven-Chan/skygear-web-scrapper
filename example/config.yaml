@@ -1,0 +1,8 @@
+actions:
+  - name: food
+    type: multi
+    url: https://goodnuts.hk
+    selector: //table//tr[position()>2 and position()<last()]
+    mapper:
+      _id: //th/text()
+      main: //td[1]/text()
